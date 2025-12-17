@@ -56,3 +56,29 @@ Return type of variables in JavaScript
        Function  =>  function
        Object  =>  object
 */
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive ), Heap (Non-Primitive)
+
+let myName = "manoj kumar"
+let anotherName=myName
+// console.log(anotherName)
+anotherName ="Tulsidas khan"
+
+// console.log(myName)
+// console.log(anotherName)
+
+let userOne={
+    email:"user@gmai.com",
+    upi: "abc@ylb"
+}
+let userTwo = userOne;
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
+
+userTwo.email="tulsidaskhan@gmail.com";
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
