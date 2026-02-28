@@ -60,7 +60,10 @@ Return type of variables in JavaScript
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // stack (Primitive ), Heap (Non-Primitive)
+// jab bhi stack memory use hoti h tab us variable ka copy use hota h 
+// and heap memory ke case me us variable ka reference milta h
 
+// example of stack 
 let myName = "manoj kumar"
 let anotherName=myName
 // console.log(anotherName)
@@ -69,16 +72,18 @@ anotherName ="Tulsidas khan"
 // console.log(myName)
 // console.log(anotherName)
 
+
+// example of heap 
 let userOne={
     email:"user@gmai.com",
     upi: "abc@ylb"
 }
 let userTwo = userOne;
 
-// console.log(userOne.email)
-// console.log(userTwo.email)
+console.log(userOne.email)
+console.log(userTwo.email)
 
 userTwo.email="tulsidaskhan@gmail.com";
 
-// console.log(userOne.email)
-// console.log(userTwo.email)
+console.log(userOne.email)
+console.log(userTwo.email)
